@@ -24,15 +24,15 @@ Configurações do banco de dados
 
 Instalação
 =================
-$ git clone https://github.com/caickbrito/vehicle-manager.git
-$ cd vehicle-manager
-$ composer install
-$ cp .env.example .env
-$ npm install && npm run production
-$ php artisan key:generate
-$ php artisan migrate   #antes de rodar este comando verifique sua configuracao com banco em .env
-$ php artisan serve
-$ php artisan db:seed   #para gerar os seeders, dados de teste
-
+<ul>
+<li>$ cd vehicle-manager</li>
+<li>$ composer install</li>
+<li>$ cp .env.example .env</li>
+<li>$ npm install && npm run production</li>
+<li>$ php artisan key:generate</li>
+$<li> php artisan migrate   #antes de rodar este comando verifique sua configuracao com banco em .env</li>
+<li>$ php artisan serve</li>
+<li>$ php artisan db:seed   #para gerar os seeders, dados de teste</li>
+</ul>
 =========================================
 
