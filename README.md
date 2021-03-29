@@ -24,7 +24,7 @@ Configurações do banco de dados
 
 Instalação
 =================
-$ git clone https://github.com/caickbrito/vehicle-manager
+$ git clone https://github.com/caickbrito/vehicle-manager.git
 $ cd vehicle-manager
 $ composer install
 $ cp .env.example .env
