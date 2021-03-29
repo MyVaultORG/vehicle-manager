@@ -26,7 +26,8 @@ Instalação
 =================
 <ul>
 <li>$ cd vehicle-manager</li>
-<li>$ composer install</li>
+<li>$ composer install/update</li>
+<li>$ composer dumpautoload</li>
 <li>$ cp .env.example .env</li>
 <li>$ npm install && npm run production</li>
 <li>$ php artisan key:generate</li>
