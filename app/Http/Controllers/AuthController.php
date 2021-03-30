@@ -30,7 +30,15 @@ class AuthController extends Controller
 
     public function register(RegisterRequest $request)
     {
-        $data = $request->all();        
+        $data = $request->all();
+        $email = $data['email'];
+
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $json['access'] = false;
+            $json['message'] = "O formato de email não é válido";
+            
+            return $json;
+        }
         
         if ($data['password'] != $data['password_confirmation']) {
             $json['access'] = false;
