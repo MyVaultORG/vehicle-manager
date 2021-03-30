@@ -25,8 +25,8 @@
 </div>
 
 
-
-<table class="table align-middle" style="margin-top: 15px;">    
+<div class="table-responsive">
+<table class="table align-middle table-condensed table-hover" style="margin-top: 15px;">    
     <thead>
         <tr>                
             <th scope="col">Marca</th>
@@ -66,6 +66,7 @@
 @endforelse 
 
 </table>
+</div>
 
 {{ $vehicles->links()}}
 

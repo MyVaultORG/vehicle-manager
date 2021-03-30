@@ -18,8 +18,8 @@
 
 
 
-
-<table class="table align-middle" style="margin-top: 15px;">    
+<div class="table-responsive">
+<table class="table align-middle table-condensed table-hover" style="margin-top: 15px;">    
     <thead>
         <tr>                
             <th scope="col">Data da manutenção</th>
@@ -36,7 +36,7 @@
             <td>{{ $maintenance->vehicle->brand }}</td>
             <td>{{ $maintenance->vehicle->model }}</td>
             <td>{{ $maintenance->vehicle->board }}</td>
-            <td class="d-flex">
+            <td class="d-flex" id="td-responsive">
                 <a href="{{ Route('user.maintenance.edit', $maintenance->id)}}">
                     <i id="edit" class="fas fa-edit mx-3" 
                     style="color: rgb(14, 137, 252); margin-top: 6px;"></i>
@@ -62,6 +62,7 @@
 @endforelse 
 
 </table>
+</div>
 
 {{ $maintenances->links() }}
 

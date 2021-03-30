@@ -59,3 +59,10 @@ bd-placeholder-img {
       height: 105vh;      
     }
   }
+
+  @media screen and (max-width: 500px)
+  {
+    #td-responsive {
+      padding: .65rem;
+    }
+  }
